@@ -23,5 +23,6 @@ topic_arn = response["TopicArn"]
 </CreateTopicResponse>
 """
 
-#response = client.subscribe(TopicArn=topic_arn, Protocol="Email", Endpoint="TheDesiredEmailAddress@domain.com")
+# uncomment line 27, and add the subscriber's email address
+#response = client.subscribe(TopicArn=topic_arn, Protocol="Email", Endpoint="SubscriberEmailAddress@domain.com")
 subscription_arn = response["SubscriptionArn"]
