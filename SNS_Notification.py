@@ -1,9 +1,9 @@
+import boto3
 #client = boto3.client(
 #        "sns",
 #        aws_access_key_id="xyz",
 #        aws_secret_access_key="xyz",
 #        region_name="us-east-1")
-
 response = client.create_topic(Name="topic_name_here")
 topic_arn = response["TopicArn"]
 
