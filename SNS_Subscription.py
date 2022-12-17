@@ -3,6 +3,7 @@ import boto3
 """# A session stores configuration state and allows you to create service clients and resources
 class boto3.session.Session(aws_access_key_id=None, aws_secret_access_key=None, aws_session_token=None, region_name=None, botocore_session=None, profile_name=None)[source]"""
 
+# uncomment lines 7 through 11 and add your AWS Access Key and AWS Secret Access Key
 #client = boto3.client(
 #        "sns",
 #        aws_access_key_id="xyz",
@@ -23,6 +24,6 @@ topic_arn = response["TopicArn"]
 </CreateTopicResponse>
 """
 
-# uncomment line 27, and add the subscriber's email address
+# uncomment line 28, and add the subscriber's email address
 #response = client.subscribe(TopicArn=topic_arn, Protocol="Email", Endpoint="SubscriberEmailAddress@domain.com")
 subscription_arn = response["SubscriptionArn"]
