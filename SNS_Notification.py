@@ -12,7 +12,7 @@ topic_arn = response["TopicArn"]
 
 # Publish to topic
 client.publish(TopicArn=topic_arn, 
-            Message="Chicken or Fish for Lunch !", 
+            Message="Thank you for subscribing using AWS! ;)", 
             Subject="Your Email Subject Name")
 
 '''# List all subscriptions
