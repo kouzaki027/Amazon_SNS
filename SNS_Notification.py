@@ -1,9 +1,12 @@
 import boto3
+
+# uncomment lines 4 through 8 and add your AWS Access Key and AWS Secret Access Key
 #client = boto3.client(
 #        "sns",
 #        aws_access_key_id="xyz",
 #        aws_secret_access_key="xyz",
 #        region_name="us-east-1")
+
 response = client.create_topic(Name="topic_name_here")
 topic_arn = response["TopicArn"]
 
